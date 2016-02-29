@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel='stylesheet prefetch' href='css/WeatherFontIcons.css'>
+    <link rel='stylesheet prefetch' href='css/grid.css'>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <input type="button" class="refresh" value="Refresh" onClick="history.go(0)">
+    <h1></h1>
+    <div class="cell-top">
+      <h1 class="city-0"></h1>
+      <h2 class="temp-0"></h2>
+      <i class="weather-0"></i>
+      <p class="curCond"></p>
+      <p class="info-0"><text class="wSpeed"></text><text class="wDir"></text></p>
+    </div>
+
+    <div class="grid-container fourday">
+      <div class="grid-3 cell">
+        <h2 class="day-1"></h2>
+        <p class="highTemp-1"></p>
+        <p class="lowTemp-1"></p>
+        <i class="weather-1"></i>
+      </div>
+      <div class="grid-3 cell">
+        <h2 class="day-2"></h2>
+        <p class="highTemp-2"></p>
+        <p class="lowTemp-2"></p>
+        <i class="weather-2"></i>
+      </div>
+      <div class="grid-3 cell">
+        <h2 class="day-3"></h2>
+        <p class="highTemp-3"></p>
+        <p class="lowTemp-3"></p>
+        <i class="weather-3"></i>
+      </div>
+      <div class="grid-3 cell-end">
+        <h2 class="day-4"></h2>
+        <p class="highTemp-4"></p>
+        <p class="lowTemp-4"></p>
+        <i class="weather-4"></i>
+      </div>
+    </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js'></script>
+    <script src='js/colorAnimation.js'></script>
+    <script src='js/myWeatherMods.js'></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
